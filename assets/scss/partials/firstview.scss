@@ -1,0 +1,78 @@
+//====================================================================================================
+// First View styles
+//====================================================================================================
+.firstview {
+    margin: 160px;
+    // .firstview__top
+    &__top {
+        position: relative;
+        text-align: center;
+        .powered {
+            // position: absolute;
+            // top: 0;
+            // right: -20px;
+            height: 37px;
+            background-color: $color1;
+            padding: 8px 16px;
+            margin-left: 16px;
+            p {
+                position: relative;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.35px;
+                background: linear-gradient(117deg, #3291FD 0%, #8666FD 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    left: -26px;
+                    background-image: url(../images/poligon-arrow.png);
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+    }
+    // .firstview__bottom
+    &__bottom {
+        margin-top: 64px;
+        text-align: center;
+    }
+}
+
+.toptitle {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    position: relative;
+    // .top__title
+    &__title {
+        position: relative;
+        color: $color7;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 76px;
+        margin-bottom: 35px;
+    }
+    // .top__description
+    &__description {
+        color: $color8;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 35px;
+        span {
+            font-weight: 600;
+            line-height: 34px;
+        }
+    }
+}
+

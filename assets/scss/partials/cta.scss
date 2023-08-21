@@ -1,0 +1,67 @@
+//====================================================================================================
+// CTA styles
+//====================================================================================================
+
+.cta {
+    position: relative;
+    background: linear-gradient(90deg, #705AD8 0%, #8666FD 54.69%, #696CEF 100%);
+    padding: 60px 0 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    .container {
+        text-align: center;
+    }
+}
+
+.ctatitle {
+    display: flex;
+    text-align: center;
+    z-index: 2;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 87px;
+        left: 0;
+        background-image: url(../images/cta-vector.png);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    h3 {
+        position: relative;
+        color: $color1;
+        text-align: center;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 70px;
+        margin-bottom: 33px;
+        z-index: 2;
+    }
+    span {
+        position: relative;
+        color: $color1;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        background: #E583FF;
+        padding: 6px 16px;
+        height: 29px;
+        bottom: 20px;
+        z-index: 2;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -9px;
+            left: 12px;
+            background-image: url(../images/poligon-arrow-down.png);
+            width: 9px;
+            height: 9px;
+        }
+    }
+}
+

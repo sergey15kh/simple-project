@@ -1,0 +1,8 @@
+.content {
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}

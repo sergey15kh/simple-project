@@ -1,0 +1,152 @@
+//====================================================================================================
+// UI styles
+//====================================================================================================
+
+
+.dflex {
+    display: flex;
+}
+
+//Buttonn 
+.btn {
+    position: relative;
+    display: inline-flex;
+    width: 217px;
+    padding: 20px 30px;
+    border-radius: 38px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: $transition200;
+    box-shadow: 0px 30px 40px -15px rgba(112, 90, 216, 0.40);
+}
+.btnsign {
+    // .btnsign_blue
+    &_blue {
+    }
+    // .btnsign_white
+    &_white {
+    } 
+}
+.btntrial {
+		// .btntrial_blue
+		&_blue {
+            background: linear-gradient(90deg, #3126CA 0%, #705AD8 100%);
+            color: $color1;
+            &:hover {
+                background: linear-gradient(90deg, #8666FD 0%, #3291FD 100%);
+                transition: $transition200;
+            }
+            &:active {
+                background: linear-gradient(90deg, #7251EF 0%, #2C84E9 100%);
+                transition: $transition200;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 21px;
+                right: 31px;
+                background-image: url(../images/arrow-right.png);
+                width: 22px;
+                height: 22px;
+            }
+		}
+        // .btntrial_white
+        &_white {
+            background-color: $color1;
+            color: $color12;
+            &:hover {
+                background: linear-gradient(90deg, #E583FF 0%, #DE61FF 100%);
+                color: $color1;
+                &::after {
+                    content: '';
+                    background-image: url(../images/arrow-right.png);
+                }
+            }
+            &:active {
+                background: linear-gradient(90deg, #E583FF 0%, #C93AEF 100%);
+                color: $color1;
+                &::after {
+                    content: '';
+                    background-image: url(../images/arrow-right.png);
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 21px;
+                right: 31px;
+                background-image: url(../images/arrow-right-blue.png);
+                width: 22px;
+                height: 22px;
+            }
+		}
+}
+
+// Title Block
+.titleblock {
+    // .titleblock__title
+    &__title {
+        color: $color7;
+        text-align: center;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        span {
+            color: $color1;
+            padding: 4px 16px;
+            font-size: 46px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border-radius: 2px;
+            background: linear-gradient(90deg, #3126CA 0%, #705AD8 100%);
+            
+        }
+    }
+    &__description {
+        color: $color6;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px;
+    }
+}
+
+//<ScrollTo>====================================================================================================
+#scrollToTop {
+	display: inline-block;
+	background-color: #FF9800;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, 
+	opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+	&:hover {
+		cursor: pointer;
+		background-color: #333;
+	}
+	&:active {
+		background-color: #555;
+	}
+	&.show {
+		opacity: 1;
+		visibility: visible;
+	}
+  }
+
+//====================================================================================================
+
+
+
+
+

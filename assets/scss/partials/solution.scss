@@ -1,0 +1,56 @@
+//====================================================================================================
+// Solution styles
+//====================================================================================================
+.solution {
+    margin: 160px 0;
+    .titleblock {
+        flex: 0 0 50%;
+        &__title {
+        text-align: left;
+        width: 530px;
+        }
+        &__description {
+            margin-top: 16px;
+            text-align: left;
+            width: 750px;
+        }
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.menusolution {
+    flex: 0 0 50%;
+		// .menusolution__list
+		&__list {
+            margin-left: auto;
+		}
+		// .menusolution__item
+		&__item {
+            color: $color7;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            border-radius: 1px 32px 32px 1px;
+            border-left: 4px solid rgba(80, 64, 209, 0.50);
+            background: $color1;
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -15px;
+                width: 4px;
+                height: 54px;
+                background-color: rgba(80, 64, 209, 0.50);
+            }
+		}
+}

@@ -1,0 +1,40 @@
+//====================================================================================================
+// Teams styles
+//====================================================================================================
+.teams {
+    .titleblock {
+        width: 946px;
+        margin: 0 auto;
+    }
+}
+.menuteam {
+    margin-top: 80px;
+    padding: 64px 0;
+    background-color: $color1;
+		// .menuteam__list
+		&__list {
+            display: flex;
+		}
+		// .menuteam__item
+		&__item {
+            position: relative;
+            color: $color8;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            margin-right: 144px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -15px;
+                width: 4px;
+                height: 54px;
+                background-color: rgba(80, 64, 209, 0.50);
+            }
+		}
+}

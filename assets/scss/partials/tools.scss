@@ -1,0 +1,76 @@
+//====================================================================================================
+// Tools styles
+//====================================================================================================
+.tools {
+    position: relative;
+    margin: 160px 0;
+}
+
+.tools {
+    ._tabs {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    
+    .tabs-block {
+        // .tabs-block__nav
+        &__nav {
+            flex: 0 0 19%;
+        }
+        // .tabs-block__body
+        &__body {
+            flex: 0 0 64%;
+        }
+        p {
+            width: 750px;
+            color: $color7;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    
+    ._tabs-item {
+        display: flex;
+        align-items: center;
+        color: $color7;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        border-radius: 20px;
+        padding: 10px 28px 10px 10px;
+        margin-bottom: 6px;
+        img {
+            width: 24px;
+            height: 24px;
+            margin-right: 18px;
+        }
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        &._active {
+            background: $color1;
+            border-radius: 10px;
+            box-shadow: 0px 20px 40px -15px rgba(110, 89, 216, 0.30);
+        }
+    }
+    ._tabs-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &._active {
+            display: flex;
+        }
+    }
+    
+}
